@@ -50,26 +50,6 @@ public class Registration {
         this.cPassword = cPassword;
     }
 
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    public String getFatherName() {
-        return fatherName;
-    }
-
-    public String getPhoneNumber() {
-        return phoneNumber;
-    }
-
-    public String getCnicNumber() {
-        return cnicNumber;
-    }
-
     public String getEmail() {
         return email;
     }
