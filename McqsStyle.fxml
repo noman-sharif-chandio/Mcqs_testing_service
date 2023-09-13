@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="518.0" prefWidth="767.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.MCQController">
+   <children>
+      <Label fx:id="questionLabel" layoutX="42.0" layoutY="14.0" prefHeight="100.0" prefWidth="719.0" text="Question">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="option1" layoutX="31.0" layoutY="152.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="496.0" text="option1">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="option2" layoutX="31.0" layoutY="205.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="496.0" text="option2">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="option3" layoutX="31.0" layoutY="259.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="502.0" text="option3">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="option4" layoutX="31.0" layoutY="307.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="509.0" text="option4">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </RadioButton>
+      <Button fx:id="nextButton" layoutX="42.0" layoutY="432.0" mnemonicParsing="false" onAction="#onNextButtonClicked" prefHeight="47.0" prefWidth="165.0" styleClass="other-form" stylesheets="@registrationStyle.css" text="Next Option" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="showResultButton" layoutX="279.0" layoutY="433.0" mnemonicParsing="false" onAction="#onShowResultButtonClicked" prefHeight="47.0" prefWidth="165.0" styleClass="other-form" stylesheets="@registrationStyle.css" text="Submit Test" textFill="WHITE" />
+      <Label fx:id="resultLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="69.0" layoutY="39.0" onDragDetected="#onShowResultButtonClicked" prefHeight="389.0" prefWidth="540.0">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
